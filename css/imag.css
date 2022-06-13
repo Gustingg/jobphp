@@ -1,0 +1,47 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-:color (brown)
+}
+   .box{
+    color: white;
+     position: absolute;
+     top: 30%;
+     left: 30%;
+     transform: center(30%, -30%);
+     background-color: rgba(0, 0, 0, 0.8);
+     padding: 15px;
+     border-radius: 15px;
+     width: 100%;
+      }
+   fieldset{
+     border: 3px solid floralwhite;
+   }
+    legend{
+      border: 1px solid brown;
+      padding-top: 15px;
+      text-align: center;
+      background-color: brown;
+      border-radius: 8px;
+    }
+    .inputBox{
+      position: relative;
+    }
+    .inputUser{
+      background: none;
+      border: white;
+      border-bottom: 1px solid white;
+      outline: none;
+      color: white;
+      font-size: 15px;
+      width: 100%;
+    }
+      button {
+      background-color: rgb(floralwhite);
+      border: none;
+      padding: 15px;
+      width: 8%;
+      border-radius: 10px;
+      color: black;
+      font-size: 15px;
+    }
+
