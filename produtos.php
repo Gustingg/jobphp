@@ -33,7 +33,7 @@
               echo '<td>'.$registro['preco'].'</td>';
               echo '<td><img src="'.$registro['img'].'" style="width:100px;height:100px"></td>';
               echo '<td>
-                        <a class="btn btn-warning" href="clienteForm.php?acao=editar&cpf='.$registro['id'].'"><i class="bi bi-pencil-square"></i></a>
+                        <a class="btn btn-warning" href="produtoForm.php?acao=editar&id='.$registro['id'].'"><i class="bi bi-pencil-square"></i></a>
                         <a class="btn btn-danger" onclick="confirmDelete('.$registro['id'].')""><i class="bi bi-trash"></i></a>
                     </td>';
             echo '</tr>';

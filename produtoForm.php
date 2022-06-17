@@ -14,7 +14,7 @@
         $stmt->execute();
         $dados = $stmt->fetch(PDO::FETCH_ASSOC);
         echo '
-            <form name="cadProd" action="./actions/editarproduto.php" method="post">
+            <form enctype="multipart/form-data" name="cadProd" action="./actions/editarproduto.php" method="post">
                 <legend>Dados do Produto</legend>
                 <input type="text" name="id" required value='.$dados['id'].' style="display:none">
                 <div>
@@ -22,16 +22,20 @@
                     <input type="text" name="nome" required value='.$dados['nome'].'>
                 </div>
                 <div>
-                    <label for="telefone">Telefone:</label>
+                    <label for="qtd">Quantidade:</label>
                     <input type="text" name="qtd" required value='.$dados['qtd'].'>
                 </div>
                 <div>
-                    <label for="email">Email:</label>
-                    <input type="email" name="preco" required value='.$dados['preco'].'>
+                    <label for="preco">Preço:</label>
+                    <input type="text" name="preco" required value='.$dados['preco'].'>
+                </div>
+                <div>
+                    <label for="imgAtual">Imagem atual:</label>
+                    <img src='.$dados['img'].' style="width:100px;height:100px">
                 </div>
                 <div>
                     <label for="img">Imagem:</label>
-                    <input type="file" name="img" accept="image/png, image/jpeg" required value='.$dados['img'].'>
+                    <input type="file" name="img" accept="image/png, image/jpeg" required>
                 </div>
                 <div>
                     <input class="submit" type="submit" value="Enviar">
