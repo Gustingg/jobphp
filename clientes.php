@@ -5,7 +5,7 @@
   require_once "./shared/conn.php";
   header('Content-Type: text/html; charset=utf-8');
   $dbh = DBConnection::get();
-  $stmt = $dbh->prepare("SELECT * FROM cliente as cli INNER JOIN endereco as ende ON cli.cpf = ende.fk_cpfCliente WHERE cli.cpf = :cpf;");
+  $stmt = $dbh->prepare("SELECT * FROM cliente as cli INNER JOIN endereco as ende ON cli.cpf = ende.fk_cpfCliente WHERE cli.cpf != :cpf;");
   $stmt->bindParam(':cpf', $_SESSION['cpf']);
   $stmt->execute();
   $dados = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -47,7 +47,7 @@
           }
         }
         else{
-          echo "<tr><td colspan='5'><p style='text-align-last: center;'>Ops... Parece que não temos nenhum cliente cadastrado ainda.</p></td></tr>";
+          echo "<tr><td colspan='9'><p style='text-align-last: center;'>Ops... Parece que não temos nenhum cliente cadastrado ainda.</p></td></tr>";
         }
         echo '</tbody>
       </table>
