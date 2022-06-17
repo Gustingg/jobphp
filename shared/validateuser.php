@@ -14,6 +14,7 @@ if(isset($_POST['cpf']) && isset($_POST['senha'])){
     if($result != null){
         $_SESSION['cargo']=$result['cargo'];
         $_SESSION['nome']=$result['nome'];
+        $_SESSION['cpf']=$result['cpf'];
         header('Location: ../index.php');
     }
     else{

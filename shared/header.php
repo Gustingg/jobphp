@@ -6,6 +6,7 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
         <link rel="stylesheet" href="css/pagina.css">
         <title>Adega CasaBlancas - <?php echo $_SESSION['pageTitle'] ?></title>
     </head>
@@ -14,7 +15,7 @@
         <nav class="navbar navbar-light bg-gradient">
             <div>
                 <img class="rounded-circle " src="img/logo.jpg" alt="Logo da loja">
-                <a class="navbar-brand text-white m-3" href="#">Adega CasaBlanca</a>
+                <a class="navbar-brand text-white m-3" href="index.php">Adega CasaBlanca</a>
             </div> 
             <ul class="nav">
                 <?php 
@@ -47,7 +48,7 @@
                     else{
                         echo '
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="cadastro.php">Cadastro</a>
+                                <a class="nav-link text-white" href="clienteForm.php">Cadastro</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="login.php">Login</a>
