@@ -4,10 +4,6 @@
     include './shared/header.php';
     require_once "./shared/conn.php";
     header('Content-Type: text/html; charset=utf-8');
-    $dbh = DBConnection::get();
-    $stmt = $dbh->prepare("SELECT * FROM produto");
-    $stmt->execute();
-    $dados = $stmt->fetchAll(PDO::FETCH_ASSOC);
     echo '
         <div>
             <h1>Login</h1>

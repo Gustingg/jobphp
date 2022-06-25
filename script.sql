@@ -44,7 +44,6 @@ CREATE TABLE IF NOT EXISTS `cliente` (
 
 INSERT INTO `cliente` (`cpf`, `nome`, `telefone`, `email`, `senha`, `cargo`) VALUES
 (11122233344, 'Admin', '17 99999-9999', 'admin@aadmin.com', '486684', 1),
-(44433344488, 'Gust22', '(17)', 's@s.com', '486684', 0);
 
 -- --------------------------------------------------------
 

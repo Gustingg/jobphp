@@ -12,8 +12,6 @@
     $sth->bindParam(':complemento', $_POST['complemento']);
     $sth->bindParam(':numero', $_POST['numero']);
     $sth->bindParam(':cpf', $_POST['cpf']);
-
-    print_r($_POST['cpf']);
     
     $sth->execute();
     header('Location: ../clientes.php');

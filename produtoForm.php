@@ -20,19 +20,19 @@
                     <input type="text" name="id" required value='.$dados['id'].' style="display:none">
                     <div>
                         <label for="nome">Nome</label>
-                        <input type="text" name="nome" required value='.$dados['nome'].'>
+                        <input type="text" name="nome" required value="'.$dados['nome'].'">
                     </div>
                     <div>
                         <label for="qtd">Quantidade:</label>
-                        <input type="text" name="qtd" required value='.$dados['qtd'].'>
+                        <input type="text" name="qtd" required value="'.$dados['qtd'].'">
                     </div>
                     <div>
                         <label for="preco">Preço:</label>
-                        <input type="text" name="preco" required value='.$dados['preco'].'>
+                        <input type="text" name="preco" required value="'.$dados['preco'].'">
                     </div>
                     <div>
                         <label for="imgAtual">Imagem atual:</label>
-                        <img src='.$dados['img'].' style="width:100px;height:100px">
+                        <img src="'.$dados['img'].'" style="width:100px;height:100px">
                     </div>
                     <div>
                         <label for="img">Imagem:</label>

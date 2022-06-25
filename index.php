@@ -2,7 +2,7 @@
   session_start();
   $_SESSION['pageTitle'] = 'Home';
   include './shared/header.php';
-  require_once "./shared/conn.php";
+  require_once "./shared/conn.php"; //sempre pra startar
   header('Content-Type: text/html; charset=utf-8');
   $dbh = DBConnection::get();
   $stmt = $dbh->prepare("SELECT * FROM produto");
